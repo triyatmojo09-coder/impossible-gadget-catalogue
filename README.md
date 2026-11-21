@@ -18,7 +18,8 @@ beside it, clean and pointedly unused.
 ## How the program works
 
 `main.py` (Python 3.13, standard library only, no network) holds the finished
-photograph embedded as base64 and writes it out verbatim to the output path:
+photograph embedded as a single-line base64 payload and writes it out
+verbatim to the output path:
 `$MAKEFUN_OUTPUT_DIR` when set (a directory, or a `.png`/`.jpg` file path),
 otherwise `/output/entry.png`. The image is a 1024x1024 JPEG of 71,046 bytes,
 inside the gate's caps of 1024x1024 px and 1,048,576 bytes (a whole PNG or
